@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+
+        @media screen and (max-width:1024px) and (min-width:768px) {
+            
+            body{background-color: aqua;}
+
+        }
+        
+        ul{ list-style-type: none;
+            padding:0px;
+            margin:0px;
+            overflow:hidden; 
+            
+        }
+        li a {
+           text-decoration: none;
+           display:block;
+           color:black;
+           float:right;
+           padding: 10px; 
+           /* margin-right: 10px; */
+        }
+        li a:hover{
+            text-decoration: underline;
+            color:#888888;
+        }
+        /* img{
+            display:block;
+            height: 200px   ;
+            width: 40vw;
+            padding-top:112px;
+            margin : auto;
+            border:1px solid black;
+
+        } */
+        #img{
+            height: 92px;
+            width:272px;
+            margin:100px auto 50px auto;
+            background:white url("google2.png") center no-repeat;
+            background-size: 100% 100%;
+            
+
+        }
+        input{
+            font-size: 20px;
+            display: block;
+            margin:10px;
+            padding:10px;
+            background:transparent;
+            box-sizing: border-box;
+            width:40vw;
+            margin-left:auto;
+            margin-right:auto;
+            background: white url("voice.png") right no-repeat;
+            background-size: 5% 50%;
+            margin-bottom: 75px;
+           
+        }
+        input:hover, input:focus,  .grid-item:hover{
+            box-shadow: 1px 1px 1px 1px #888888;
+        }
+       
+        .grid-container{
+            display:grid;
+            grid-column-gap: 1.25em;
+            grid-row-gap: 1.25em;
+            grid-template-columns: auto auto auto auto;
+            background-color:white;
+            padding:10px;
+            width:40vw;
+            margin:30px auto 20px auto;
+            overflow:no-display;
+        }
+        .grid-item{
+            /* background-color: rgba(255, 255, 255, 0.8); */
+            border: 1px solid rgba(0, 0, 0, 0.5);
+            padding: 70px;
+            background : rgba(255, 255, 255, 0.8) url("window.png") no-repeat center;
+            background-size: cover;
+            
+        }
+        #r{
+            height: 12px;
+            width: 12px;
+            background-image: url("photoicon.jpg"); 
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            border-radius: 50%;  
+            margin-top: 0px;
+            margin-right: 10px;
+            
+
+        }
+        
+    </style>
+
+</head>
+<body>
+    <div id="main">
+        <ul>
+            <li><a id="r" href="#mail"></a></li>
+            <li><a href="#mail">User</a></li>
+            <li><a href="#mail">Images</a></li>
+            <li><a href="#mail">Gmail</a></li>
+            
+        </ul>
+        <div id="img">
+                <!-- <img src="C:\Users\YML\Desktop\google.png" /> -->
+        </div>
+            
+        
+        <div id="searchbox">
+            <form action="">
+                <input type="text" placeholder="Search Google or type URL" />
+            </form>
+        </div>
+        <div class="grid-container">
+            <!-- <div class="grid-item"><a href="" target="_blank">1</a></div>
+            <div class="grid-item"><a href="" target="_blank">2</a></div>
+            <div class="grid-item"><a href="" target="_blank">3</a></div>
+            <div class="grid-item"><a href="" target="_blank">4</a></div>
+            <div class="grid-item"><a href="" target="_blank">5</a></div>
+            <div class="grid-item"><a href="" target="_blank">6</a></div>
+            <div class="grid-item"><a href="" target="_blank">7</a></div>
+            <div class="grid-item"><a href="" target="_blank">8</a></div> -->
+
+            <a class="grid-item" href="" target="_blank" ></a>
+            <a class="grid-item" href="" target="_blank"></a>
+            <a class="grid-item" href="" target="_blank"></a>
+            <a class="grid-item" href="" target="_blank"></a>
+            <a class="grid-item" href="" target="_blank"></a>
+            <a class="grid-item" href="" target="_blank"></a>
+            <a class="grid-item" href="" target="_blank"></a>
+            <a class="grid-item" href="" target="_blank"></a>
+        </div>
+    </div>
+</body>
+</html>
